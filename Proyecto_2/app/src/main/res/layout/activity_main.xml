@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logoConf"
+        android:layout_width="300dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_background"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="10dp"
+        android:text="Nombre"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/logoConf"
+        app:layout_constraintStart_toStartOf="@+id/logoConf"
+        app:layout_constraintTop_toBottomOf="@+id/logoConf" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_background"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:padding="10dp"
+        android:text="1234"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/editName"
+        app:layout_constraintStart_toStartOf="@+id/editName"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:text="INGRESAR"
+        app:layout_constraintEnd_toEndOf="@+id/editPassword"
+        app:layout_constraintStart_toStartOf="@+id/editPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+
+    <ImageView
+        android:id="@+id/imgGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_search"
+        app:layout_constraintStart_toStartOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+
+    <TextView
+        android:id="@+id/txtLoginGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Inciar sesión con Google"
+        android:textColor="@color/whiteFazo"
+        app:layout_constraintBottom_toBottomOf="@+id/imgGoogle"
+        app:layout_constraintStart_toEndOf="@+id/imgGoogle"
+        app:layout_constraintTop_toTopOf="@+id/imgGoogle" />
+
+    <ImageView
+        android:id="@+id/imgFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_facebook"
+        app:layout_constraintStart_toStartOf="@+id/imgGoogle"
+        app:layout_constraintTop_toBottomOf="@+id/txtLoginGoogle" />
+
+    <TextView
+        android:id="@+id/txtLoginFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Inciar sesión con Facebook"
+        android:textColor="@color/whiteFazo"
+        app:layout_constraintBottom_toBottomOf="@+id/imgFacebook"
+        app:layout_constraintStart_toEndOf="@+id/imgFacebook"
+        app:layout_constraintTop_toTopOf="@+id/imgFacebook" />
+
+    <TextView
+        android:id="@+id/txtForgottenPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/forgotten_password"
+        android:textColor="@color/whiteFazo"
+        app:layout_constraintEnd_toEndOf="@+id/logoConf"
+        app:layout_constraintTop_toBottomOf="@+id/txtLoginFacebook" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
