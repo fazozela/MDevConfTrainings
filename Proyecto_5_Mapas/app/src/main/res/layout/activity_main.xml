@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btnMapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VER MAPA"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"/>
+    <Button
+        android:id="@+id/btnPolylines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Polylines"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btnMarkers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Markers"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btnCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
